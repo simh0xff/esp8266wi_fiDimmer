@@ -10,8 +10,10 @@ int regim = 0;
 int incColour = 1;
 int decColour = 0;     
 int i = 0;
+const char* ssid = "*ssid of you wi_fi point";
+const char* password = "*password*";
 
-const char * HTML_code = "<!DOCTYPE html>"
+const char * HTML_code = "<!DOCTYPE html>"//html page
 "<html>"
  "<head>"
    "<h1 style=color:#000000>LedStripDriver</h1>"
@@ -117,8 +119,6 @@ const char * HTML_code = "<!DOCTYPE html>"
  "</body>"
 "</html>" ;
 MDNSResponder mdns;
-const char* ssid = "Esp8266LedPower";
-const char* password = "ledstripdriver";
 ESP8266WebServer server(80);
 void setup() {
  Serial.begin(115200);
